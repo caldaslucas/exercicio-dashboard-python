@@ -10,3 +10,6 @@ Este projeto foi criado durante a Imersão Dados com Python da Alura e utiliza *
   - Gráfico de pizza para proporção dos tipos de trabalho.
   - Mapa coroplético para análise de salários por país.
 - **Métricas Principais**: Exibe salário médio, máximo, total de registros e cargo mais frequente.
+
+## Preview
+Acesse o dashboard online: [Dashboard de Salários](https://dashboard-python-2025.streamlit.app/)
