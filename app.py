@@ -117,7 +117,13 @@ with col_graf3:
             color_discrete_sequence=["#797AFE", "#12DDFA", "#F830E9"]
         )
         grafico_remoto.update_traces(textinfo='percent+label')
-        grafico_remoto.update_layout(title_x=0.1)
+        grafico_remoto.update_layout(
+            title_x=0.1,
+            legend=dict(
+                x=0.0,  # Aproxima a legenda horizontalmente (0 é extremo esquerdo, 1 é extremo direito)
+                y=0.5,  # 0 é extremo inferior, 1 é extremo superior
+                        )
+        )
         st.plotly_chart(grafico_remoto, use_container_width=True)
     else:
         st.warning("Nenhum dado para exibir no gráfico dos tipos de trabalho.")
